@@ -1,0 +1,140 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+-log-file	Makefile	/^	valgrind -s --log-file=.\/.valgrind.log --leak-check=full --show-leak-kinds=all --track-origins=yes .\/shado shado.c$/;"	m
+ABUF_INIT	shado.c	26;"	d	file:
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-g -Wno-deprecated -Wall -Wextra -pedantic -std=c99 -pie -pedantic -static-libasan # -fsanitize=address$/;"	m
+CHAR_AZ09	shado.c	/^    CHAR_AZ09 = 0,$/;"	e	enum:char_type	file:
+CHAR_NL	shado.c	/^    CHAR_NL,$/;"	e	enum:char_type	file:
+CHAR_SYM	shado.c	/^    CHAR_SYM,$/;"	e	enum:char_type	file:
+CHAR_WHITESPACE	shado.c	/^    CHAR_WHITESPACE,$/;"	e	enum:char_type	file:
+CTRL_KEY	shado.c	70;"	d	file:
+Cursor	shado.c	/^struct Cursor {$/;"	s	file:
+DEBUG	shado.c	67;"	d	file:
+E	shado.c	/^struct GlobalState E;$/;"	v	typeref:struct:GlobalState
+GlobalState	shado.c	/^struct GlobalState {$/;"	s	file:
+INSERT	shado.c	61;"	d	file:
+LEN	shado.c	69;"	d	file:
+MAX	rope.c	150;"	d	file:
+MIN	rope.c	149;"	d	file:
+MISC	shado.c	64;"	d	file:
+NEEDS_TWO_WCHARS	rope.c	216;"	d	file:
+NORMAL	shado.c	60;"	d	file:
+REPLACE	shado.c	63;"	d	file:
+ROPE_BIAS	rope.h	43;"	d
+ROPE_FOREACH	rope.h	163;"	d
+ROPE_INVALID_UTF8	rope.h	/^typedef enum { ROPE_OK, ROPE_INVALID_UTF8 } ROPE_RESULT;$/;"	e	enum:__anon4
+ROPE_MAX_HEIGHT	rope.h	49;"	d
+ROPE_NODE_STR_SIZE	rope.h	35;"	d
+ROPE_NODE_STR_SIZE	rope.h	37;"	d
+ROPE_OK	rope.h	/^typedef enum { ROPE_OK, ROPE_INVALID_UTF8 } ROPE_RESULT;$/;"	e	enum:__anon4
+ROPE_RESULT	rope.h	/^typedef enum { ROPE_OK, ROPE_INVALID_UTF8 } ROPE_RESULT;$/;"	t	typeref:enum:__anon4
+ROPE_SIZE	rope.c	/^static const size_t ROPE_SIZE = sizeof(rope) + sizeof(rope_node) * ROPE_MAX_HEIGHT;$/;"	v	file:
+ROPE_WCHAR	rope.h	25;"	d
+SHADO_VERSION	shado.c	66;"	d	file:
+SHELL	Makefile	/^SHELL=\/bin\/sh$/;"	m
+TAB_STOP	shado.c	68;"	d	file:
+VISUAL	shado.c	62;"	d	file:
+_BSD_SOURCE	shado.c	3;"	d	file:
+_DEFAULT_SOURCE	shado.c	2;"	d	file:
+_GNU_SOURCE	shado.c	4;"	d	file:
+_rope_check	rope.c	/^void _rope_check(rope *r) {$/;"	f
+_rope_print	rope.c	/^void _rope_print(rope *r) {$/;"	f
+abuf	shado.c	/^struct abuf {$/;"	s	file:
+alloc	rope.h	/^  void *(*alloc)(size_t bytes);$/;"	m	struct:__anon3
+alloc_node	rope.c	/^static rope_node *alloc_node(rope *r, uint8_t height) {$/;"	f	file:
+b	shado.c	/^    char *b;$/;"	m	struct:abuf	file:
+bytelen_and_check_utf8	rope.c	/^static ssize_t bytelen_and_check_utf8(const uint8_t *str) {$/;"	f	file:
+char_type	shado.c	/^enum char_type {$/;"	g	file:
+codepoint_size	rope.c	/^static inline size_t codepoint_size(uint8_t byte) {$/;"	f	file:
+coloff	shado.c	/^    int coloff;$/;"	m	struct:Cursor	file:
+count_bytes_in_utf8	rope.c	/^static size_t count_bytes_in_utf8(const uint8_t *str, size_t num_chars) {$/;"	f	file:
+count_utf8_in_wchars	rope.c	/^static size_t count_utf8_in_wchars(const uint8_t *str, size_t num_wchars) {$/;"	f	file:
+count_wchars_in_utf8	rope.c	/^static size_t count_wchars_in_utf8(const uint8_t *str, size_t num_chars) {$/;"	f	file:
+curs	shado.c	/^    struct Cursor curs;$/;"	m	struct:GlobalState	typeref:struct:GlobalState::Cursor	file:
+cx	shado.c	/^    int cx, cy;$/;"	m	struct:Cursor	file:
+cy	shado.c	/^    int cx, cy;$/;"	m	struct:Cursor	file:
+dirty	shado.c	/^    int dirty;$/;"	m	struct:GlobalState	file:
+disable_raw	shado.c	/^void disable_raw () { \/\/ Restores on exit to terminal's orig attributes$/;"	f
+enable_raw	shado.c	/^void enable_raw () {$/;"	f
+erow	shado.c	/^typedef struct erow {$/;"	s	file:
+erow	shado.c	/^} erow;$/;"	t	typeref:struct:erow	file:
+filename	shado.c	/^    char *filename;$/;"	m	struct:GlobalState	file:
+free	rope.h	/^  void (*free)(void *ptr);$/;"	m	struct:__anon3
+free_row	shado.c	/^void free_row (erow *row) {$/;"	f
+get_curs_pos	shado.c	/^int get_curs_pos (int *rows, int *cols) {$/;"	f
+get_win_size	shado.c	/^int get_win_size (int *rows, int *cols) {$/;"	f
+head	rope.h	/^  rope_node head;$/;"	m	struct:__anon3
+height	rope.h	/^  uint8_t height;$/;"	m	struct:rope_node_t
+idx	shado.c	/^    int idx;$/;"	m	struct:erow	file:
+init	shado.c	/^void init () {$/;"	f
+insert_at	rope.c	/^static void insert_at(rope *r, rope_iter *iter,$/;"	f	file:
+insert_row	shado.c	/^void insert_row (int at, char *s, size_t len) {$/;"	f
+iter_at_char_pos	rope.c	/^static rope_node *iter_at_char_pos(rope *r, size_t char_pos, rope_iter *iter) {$/;"	f	file:
+iter_at_wchar_pos	rope.c	/^static rope_node *iter_at_wchar_pos(rope *r, size_t wchar_pos, rope_iter *iter) {$/;"	f	file:
+kill	shado.c	/^void kill (const char *s) {$/;"	f
+len	shado.c	/^    int len;$/;"	m	struct:abuf	file:
+librope_rope_h	rope.h	13;"	d
+main	shado.c	/^int main (int argc, char *argv[]) {$/;"	f
+mode	shado.c	/^    int mode; \/* 0: normal, 1: insert, 2: visual, 3: visual_line, 4: visual_blk, 5: sreplace, 6: mrerplace, 10: misc *\/$/;"	m	struct:GlobalState	file:
+nexts	rope.h	/^  rope_skip_node nexts[];$/;"	m	struct:rope_node_t
+node	rope.h	/^  struct rope_node_t *node;$/;"	m	struct:__anon2	typeref:struct:__anon2::rope_node_t
+node_size	rope.c	/^static size_t node_size(uint8_t height) {$/;"	f	file:
+num_bytes	rope.h	/^  size_t num_bytes;$/;"	m	struct:__anon3
+num_bytes	rope.h	/^  uint16_t num_bytes;$/;"	m	struct:rope_node_t
+num_chars	rope.h	/^  size_t num_chars;$/;"	m	struct:__anon3
+numrows	shado.c	/^    int numrows;$/;"	m	struct:GlobalState	file:
+open_file	shado.c	/^void open_file (char *filename) {$/;"	f
+orig_termios	shado.c	/^    struct termios orig_termios;$/;"	m	struct:GlobalState	typeref:struct:GlobalState::termios	file:
+print_flag	shado.c	/^    int print_flag; \/* Makes sure not to print escape code keys *\/$/;"	m	struct:GlobalState	file:
+quit	shado.c	/^void quit () {$/;"	f
+random	rope.c	/^inline static long random() {$/;"	f	file:
+random_height	rope.c	/^static uint8_t random_height() {$/;"	f	file:
+realloc	rope.h	/^  void *(*realloc)(void *ptr, size_t newsize);$/;"	m	struct:__anon3
+render	shado.c	/^    char *render;$/;"	m	struct:erow	file:
+rope	rope.h	/^} rope;$/;"	t	typeref:struct:__anon3
+rope_append	rope.c	/^ROPE_RESULT rope_append (rope *r, const uint8_t *str) {$/;"	f
+rope_byte_count	rope.c	/^size_t rope_byte_count(const rope *r) {$/;"	f
+rope_char_count	rope.c	/^size_t rope_char_count(const rope *r) {$/;"	f
+rope_copy	rope.c	/^rope *rope_copy(const rope *other) {$/;"	f
+rope_create_cstr	rope.c	/^uint8_t *rope_create_cstr(rope *r) {$/;"	f
+rope_del	rope.c	/^void rope_del(rope *r, size_t pos, size_t length) {$/;"	f
+rope_del_at_iter	rope.c	/^static void rope_del_at_iter(rope *r, rope_node *e, rope_iter *iter, size_t length) {$/;"	f	file:
+rope_del_at_wchar	rope.c	/^size_t rope_del_at_wchar(rope *r, size_t wchar_pos, size_t wchar_num, size_t *char_len_out) {$/;"	f
+rope_free	rope.c	/^void rope_free(rope *r) {$/;"	f
+rope_head	shado.c	/^    rope *rope_head;$/;"	m	struct:GlobalState	file:
+rope_insert	rope.c	/^ROPE_RESULT rope_insert(rope *r, size_t pos, const uint8_t *str) {$/;"	f
+rope_insert_at_iter	rope.c	/^static ROPE_RESULT rope_insert_at_iter(rope *r, rope_node *e, rope_iter *iter, const uint8_t *str) {$/;"	f	file:
+rope_insert_at_wchar	rope.c	/^size_t rope_insert_at_wchar(rope *r, size_t wchar_pos, const uint8_t *str) {$/;"	f
+rope_iter	rope.c	/^} rope_iter;$/;"	t	typeref:struct:__anon1	file:
+rope_new	rope.c	/^rope *rope_new() {$/;"	f
+rope_new2	rope.c	/^rope *rope_new2(void *(*alloc)(size_t bytes),$/;"	f
+rope_new_with_utf8	rope.c	/^rope *rope_new_with_utf8(const uint8_t *str) {$/;"	f
+rope_node	rope.h	/^} rope_node;$/;"	t	typeref:struct:rope_node_t
+rope_node_chars	rope.h	/^static inline size_t rope_node_chars(rope_node *n) {$/;"	f
+rope_node_data	rope.h	/^static inline uint8_t *rope_node_data(rope_node *n) {$/;"	f
+rope_node_num_bytes	rope.h	/^static inline size_t rope_node_num_bytes(rope_node *n) {$/;"	f
+rope_node_t	rope.h	/^typedef struct rope_node_t {$/;"	s
+rope_node_wchars	rope.h	/^static inline size_t rope_node_wchars(rope_node *n) {$/;"	f
+rope_skip_node	rope.h	/^} rope_skip_node;$/;"	t	typeref:struct:__anon2
+rope_wchar_count	rope.c	/^size_t rope_wchar_count(rope *r) {$/;"	f
+rope_write_cstr	rope.c	/^size_t rope_write_cstr(rope *r, uint8_t *dest) {$/;"	f
+row	shado.c	/^    erow *row;$/;"	m	struct:GlobalState	file:
+rowoff	shado.c	/^    int rowoff;$/;"	m	struct:Cursor	file:
+rx	shado.c	/^    int rx;$/;"	m	struct:Cursor	file:
+s	rope.c	/^  rope_skip_node s[ROPE_MAX_HEIGHT];$/;"	m	struct:__anon1	file:
+screencols	shado.c	/^    int screencols;$/;"	m	struct:GlobalState	file:
+screenrows	shado.c	/^    int screenrows;$/;"	m	struct:GlobalState	file:
+set_cursor_type	shado.c	/^void set_cursor_type () {$/;"	f
+size	shado.c	/^    int size;$/;"	m	struct:erow	file:
+skip_size	rope.h	/^  size_t skip_size;$/;"	m	struct:__anon2
+str	rope.h	/^  uint8_t str[ROPE_NODE_STR_SIZE];$/;"	m	struct:rope_node_t
+strlen_utf8	rope.c	/^static size_t strlen_utf8(const uint8_t *str) {$/;"	f	file:
+update_offset_list	rope.c	/^static void update_offset_list(rope *r, rope_iter *iter, size_t num_chars) {$/;"	f	file:
+update_offset_list	rope.c	/^static void update_offset_list(rope *r, rope_iter *iter, size_t num_chars, size_t num_wchars) {$/;"	f	file:
+update_row	shado.c	/^void update_row (erow *row) {$/;"	f
+wchar_size	rope.h	/^  size_t wchar_size;$/;"	m	struct:__anon2

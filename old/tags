@@ -1,0 +1,268 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ABUF_INIT	shado.h	54;"	d
+ARROW_DOWN	shado.h	/^    ARROW_DOWN = 1001,$/;"	e	enum:ARROW_editorKey
+ARROW_LEFT	shado.h	/^    ARROW_LEFT = 1000,$/;"	e	enum:ARROW_editorKey
+ARROW_RIGHT	shado.h	/^    ARROW_RIGHT = 1003,$/;"	e	enum:ARROW_editorKey
+ARROW_UP	shado.h	/^    ARROW_UP = 1002,$/;"	e	enum:ARROW_editorKey
+ARROW_editorKey	shado.h	/^enum ARROW_editorKey {$/;"	g
+BACKSPACE	shado.h	/^    BACKSPACE = 127,$/;"	e	enum:ARROW_editorKey
+CHAR_AZ09	shado.h	/^    CHAR_AZ09 = 0,$/;"	e	enum:char_type
+CHAR_NL	shado.h	/^    CHAR_NL,$/;"	e	enum:char_type
+CHAR_SYM	shado.h	/^    CHAR_SYM,$/;"	e	enum:char_type
+CHAR_WHITESPACE	shado.h	/^    CHAR_WHITESPACE,$/;"	e	enum:char_type
+CTRL_KEY	shado.h	36;"	d
+CopyRegister	shado.h	/^struct CopyRegister {$/;"	s
+CopyRegister	shado.h	/^typedef struct CopyRegister CopyRegister; \/* easier since so often used *\/$/;"	t	typeref:struct:CopyRegister
+DEBUG	shado.h	27;"	d
+DEL_KEY	shado.h	/^    DEL_KEY = 1004,$/;"	e	enum:ARROW_editorKey
+DOWN	shado.h	156;"	d
+E	shado.c	/^struct GlobalState E;$/;"	v	typeref:struct:GlobalState
+END_KEY	shado.h	/^    END_KEY = 1006,$/;"	e	enum:ARROW_editorKey
+GlobalState	shado.h	/^struct GlobalState {$/;"	s
+HLDB	s_synhl.c	/^struct editorSyntax HLDB[] = {$/;"	v	typeref:struct:editorSyntax
+HLDB_ENTRIES	shado.h	38;"	d
+HL_COMMENT	shado.h	/^    HL_COMMENT,$/;"	e	enum:editorHighlight
+HL_HIGHLIGHT_NUMS	shado.h	33;"	d
+HL_HIGHLIGHT_STRINGS	shado.h	34;"	d
+HL_KEYWORD1	shado.h	/^    HL_KEYWORD1,$/;"	e	enum:editorHighlight
+HL_KEYWORD2	shado.h	/^    HL_KEYWORD2,$/;"	e	enum:editorHighlight
+HL_MATCH	shado.h	/^    HL_MATCH,$/;"	e	enum:editorHighlight
+HL_MLCOMMENT	shado.h	/^    HL_MLCOMMENT,$/;"	e	enum:editorHighlight
+HL_NORMAL	shado.h	/^    HL_NORMAL = 0,$/;"	e	enum:editorHighlight
+HL_NUMBER	shado.h	/^    HL_NUMBER,$/;"	e	enum:editorHighlight
+HL_STRING	shado.h	/^    HL_STRING,$/;"	e	enum:editorHighlight
+HOME_KEY	shado.h	/^    HOME_KEY = 1005,$/;"	e	enum:ARROW_editorKey
+INSERT	shado.h	42;"	d
+LEFT	shado.h	155;"	d
+LEN	shado.h	37;"	d
+MISC	shado.h	45;"	d
+NORMAL	shado.h	41;"	d
+PAGE_DOWN	shado.h	/^    PAGE_DOWN = 1008,$/;"	e	enum:ARROW_editorKey
+PAGE_UP	shado.h	/^    PAGE_UP = 1007,$/;"	e	enum:ARROW_editorKey
+QUIT_TIMES	shado.h	31;"	d
+REPLACE	shado.h	44;"	d
+RIGHT	shado.h	158;"	d
+SHADO_VERSION	shado.h	26;"	d
+SHOW_BAR	shado.h	30;"	d
+Stack	shado.h	/^struct Stack {$/;"	s
+Stack	shado.h	/^typedef struct Stack Stack;$/;"	t	typeref:struct:Stack
+TAB_STOP	shado.h	29;"	d
+TERM_BLACK	shado.h	/^    TERM_BLACK = 30, TERM_RED = 31,$/;"	e	enum:term_colors
+TERM_BLUE	shado.h	/^    TERM_BLUE = 34, TERM_MAGENTA = 35,$/;"	e	enum:term_colors
+TERM_BRIGHT_BLACK	shado.h	/^    TERM_BRIGHT_BLACK = 90, TERM_BRIGHT_RED = 91,$/;"	e	enum:term_colors
+TERM_BRIGHT_BLUE	shado.h	/^    TERM_BRIGHT_BLUE = 94, TERM_BRIGHT_MAGENTA = 95,$/;"	e	enum:term_colors
+TERM_BRIGHT_CYAN	shado.h	/^    TERM_BRIGHT_CYAN = 96, TERM_BRIGHT_WHITE = 97,$/;"	e	enum:term_colors
+TERM_BRIGHT_GREEN	shado.h	/^    TERM_BRIGHT_GREEN = 92, TERM_BRIGHT_YELLOW = 93,$/;"	e	enum:term_colors
+TERM_BRIGHT_MAGENTA	shado.h	/^    TERM_BRIGHT_BLUE = 94, TERM_BRIGHT_MAGENTA = 95,$/;"	e	enum:term_colors
+TERM_BRIGHT_RED	shado.h	/^    TERM_BRIGHT_BLACK = 90, TERM_BRIGHT_RED = 91,$/;"	e	enum:term_colors
+TERM_BRIGHT_WHITE	shado.h	/^    TERM_BRIGHT_CYAN = 96, TERM_BRIGHT_WHITE = 97,$/;"	e	enum:term_colors
+TERM_BRIGHT_YELLOW	shado.h	/^    TERM_BRIGHT_GREEN = 92, TERM_BRIGHT_YELLOW = 93,$/;"	e	enum:term_colors
+TERM_CYAN	shado.h	/^    TERM_CYAN = 36, TERM_WHITE = 37,$/;"	e	enum:term_colors
+TERM_GREEN	shado.h	/^    TERM_GREEN = 32, TERM_YELLOW = 33,$/;"	e	enum:term_colors
+TERM_MAGENTA	shado.h	/^    TERM_BLUE = 34, TERM_MAGENTA = 35,$/;"	e	enum:term_colors
+TERM_RED	shado.h	/^    TERM_BLACK = 30, TERM_RED = 31,$/;"	e	enum:term_colors
+TERM_WHITE	shado.h	/^    TERM_CYAN = 36, TERM_WHITE = 37,$/;"	e	enum:term_colors
+TERM_YELLOW	shado.h	/^    TERM_GREEN = 32, TERM_YELLOW = 33,$/;"	e	enum:term_colors
+UP	shado.h	157;"	d
+VISUAL	shado.h	43;"	d
+_BSD_SOURCE	shado.h	4;"	d
+_DEFAULT_SOURCE	shado.h	3;"	d
+_GNU_SOURCE	shado.h	5;"	d
+ab_append	s_abuf.c	/^void ab_append(struct abuf *ab, const char *s, int len) {$/;"	f
+ab_free	s_abuf.c	/^void ab_free(struct abuf *ab) {$/;"	f
+abuf	shado.h	/^struct abuf {$/;"	s
+append_string_row	s_rows.c	/^void append_string_row (erow *row, char *s, size_t len) {$/;"	f
+b	shado.h	/^    char *b;$/;"	m	struct:abuf
+bin_search	s_modes.c	/^int bin_search (const struct mapping map[], int left, int right, int x) {$/;"	f
+c	shado.h	/^    int c;$/;"	m	struct:mapping
+c_hl_extensions	s_synhl.c	/^char *c_hl_extensions[] = { ".c", ".h", ".cpp", ".y", NULL };$/;"	v
+c_hl_keywords	s_synhl.c	/^char *c_hl_keywords[] = { $/;"	v
+char_type	shado.h	/^enum char_type {$/;"	g
+chars	shado.h	/^    char *chars;$/;"	m	struct:erow
+cmd	s_modes.c	/^    char *cmd;$/;"	m	struct:mapping_exec	file:
+cmd_func	s_modes.c	/^    handle cmd_func;$/;"	m	struct:mapping_exec	file:
+cmd_func	shado.h	/^    handle cmd_func;$/;"	m	struct:mapping
+coloff	shado.h	/^    int coloff;$/;"	m	struct:GlobalState
+copy_append_row	s_rows.c	/^struct erow *copy_append_row (erow *row, char *s, size_t len) {$/;"	f
+cpy_append	s_copyreg.c	/^void cpy_append (char *line) {$/;"	f
+cpy_prepend	s_copyreg.c	/^void cpy_prepend (char *line) {$/;"	f
+cpy_print	s_copyreg.c	/^void cpy_print() {$/;"	f
+cpycurr	shado.h	/^    CopyRegister *cpycurr;$/;"	m	struct:GlobalState
+cpyhead	shado.h	/^    CopyRegister *cpyhead;$/;"	m	struct:GlobalState
+cx	shado.h	/^    int cx, cy;$/;"	m	struct:GlobalState
+cy	shado.h	/^    int cx, cy;$/;"	m	struct:GlobalState
+delete_char	s_ops.c	/^void delete_char () {$/;"	f
+delete_char_row	s_rows.c	/^void delete_char_row(erow *row, int at) {$/;"	f
+delete_row	s_rows.c	/^void delete_row (int at) {$/;"	f
+dirty	shado.h	/^    int dirty;$/;"	m	struct:GlobalState
+disable_raw	s_term.c	/^void disable_raw () { \/\/ Restores on exit to terminal's orig attributes$/;"	f
+draw_msg_bar	s_bar.c	/^void draw_msg_bar (struct abuf *ab) {$/;"	f
+draw_rows	s_output.c	/^void draw_rows (struct abuf *ab) {$/;"	f
+draw_sts_bar	s_bar.c	/^void draw_sts_bar (struct abuf *ab) {$/;"	f
+e_fquit	s_modes.c	/^void e_fquit() {$/;"	f
+e_map	s_modes.c	/^} e_map[] = { $/;"	v	typeref:struct:mapping_exec
+e_quit	s_modes.c	/^void e_quit() {$/;"	f
+e_write	s_modes.c	/^void e_write() {$/;"	f
+e_writeq	s_modes.c	/^void e_writeq() {$/;"	f
+editorHighlight	shado.h	/^enum editorHighlight {$/;"	g
+editorSyntax	shado.h	/^struct editorSyntax {$/;"	s
+enable_raw	s_term.c	/^void enable_raw () {$/;"	f
+erow	shado.h	/^typedef struct erow {$/;"	s
+erow	shado.h	/^} erow;$/;"	t	typeref:struct:erow
+filematch	shado.h	/^    char **filematch;$/;"	m	struct:editorSyntax
+filename	shado.h	/^    char *filename;$/;"	m	struct:GlobalState
+filetype	shado.h	/^    char *filetype;$/;"	m	struct:editorSyntax
+flags	shado.h	/^    int flags;$/;"	m	struct:editorSyntax
+free_row	s_rows.c	/^void free_row (erow *row) {$/;"	f
+get_char_type	s_ops.c	/^int get_char_type (int c) {$/;"	f
+get_curs_pos	s_term.c	/^int get_curs_pos (int *rows, int *cols) {$/;"	f
+get_win_size	s_term.c	/^int get_win_size (int *rows, int *cols) {$/;"	f
+handle	shado.h	/^typedef void (*handle)(void);$/;"	t
+hl	shado.h	/^    unsigned char *hl;$/;"	m	struct:erow
+hl_open_comment	shado.h	/^    int hl_open_comment;$/;"	m	struct:erow
+i_backspace	s_modes.c	/^void i_backspace() {$/;"	f
+i_delete	s_modes.c	/^void i_delete() {$/;"	f
+i_escape	s_modes.c	/^void i_escape() {$/;"	f
+i_map	s_modes.c	/^const struct mapping i_map[] = { $/;"	v	typeref:struct:mapping
+i_move_down	s_modes.c	/^void i_move_down() {$/;"	f
+i_move_left	s_modes.c	/^void i_move_left() {$/;"	f
+i_move_right	s_modes.c	/^void i_move_right() {$/;"	f
+i_move_up	s_modes.c	/^void i_move_up() {$/;"	f
+i_null	s_modes.c	/^void i_null() {$/;"	f
+i_return	s_modes.c	/^void i_return() {$/;"	f
+idx	shado.h	/^    int idx;$/;"	m	struct:erow
+init	shado.c	/^void init () {$/;"	f
+insert_char	s_ops.c	/^void insert_char (int c) {$/;"	f
+insert_char_row	s_rows.c	/^void insert_char_row (erow *row, int at, int c) {$/;"	f
+insert_nl	s_ops.c	/^void insert_nl () {$/;"	f
+insert_row	s_rows.c	/^void insert_row (int at, char *s, size_t len) {$/;"	f
+is_empty	s_stack.c	/^int is_empty (Stack *top) {$/;"	f
+is_separator	s_synhl.c	/^int is_separator (int c) {$/;"	f
+keywords	shado.h	/^    char **keywords;$/;"	m	struct:editorSyntax
+kill	s_term.c	/^void kill (const char *s) {$/;"	f
+len	shado.h	/^    int len;$/;"	m	struct:abuf
+line	shado.h	/^    char *line;$/;"	m	struct:CopyRegister
+main	shado.c	/^int main (int argc, char *argv[]) {$/;"	f
+make_snapshot	shado.c	/^struct GlobalState *make_snapshot () {$/;"	f
+mapping	shado.h	/^struct mapping {$/;"	s
+mapping_exec	s_modes.c	/^const struct mapping_exec {$/;"	s	file:
+mode	shado.h	/^    int mode;$/;"	m	struct:GlobalState
+move_cursor	s_input.c	/^void move_cursor (int key) {$/;"	f
+multiline_comment_end	shado.h	/^    char *multiline_comment_end;$/;"	m	struct:editorSyntax
+multiline_comment_start	shado.h	/^    char *multiline_comment_start;$/;"	m	struct:editorSyntax
+n_append	s_modes.c	/^void n_append() {$/;"	f
+n_back	s_modes.c	/^void n_back() {$/;"	f
+n_bprint	s_modes.c	/^void n_bprint() {$/;"	f
+n_cdown	s_modes.c	/^void n_cdown() {$/;"	f
+n_cleft	s_modes.c	/^void n_cleft() {$/;"	f
+n_cline	s_modes.c	/^void n_cline() {$/;"	f
+n_cmap	s_modes.c	/^const struct mapping n_cmap[] = {$/;"	v	typeref:struct:mapping
+n_cright	s_modes.c	/^void n_cright() {$/;"	f
+n_ctree	s_modes.c	/^void n_ctree() { $/;"	f
+n_cup	s_modes.c	/^void n_cup() {$/;"	f
+n_cursdel	s_modes.c	/^void n_cursdel() {$/;"	f
+n_ddown	s_modes.c	/^void n_ddown() {$/;"	f
+n_dleft	s_modes.c	/^void n_dleft() {$/;"	f
+n_dline	s_modes.c	/^void n_dline() {$/;"	f
+n_dmap	s_modes.c	/^const struct mapping n_dmap[] = {$/;"	v	typeref:struct:mapping
+n_dright	s_modes.c	/^void n_dright() {$/;"	f
+n_dtree	s_modes.c	/^void n_dtree() { $/;"	f
+n_dup	s_modes.c	/^void n_dup() {$/;"	f
+n_eappend	s_modes.c	/^void n_eappend() {$/;"	f
+n_echange	s_modes.c	/^void n_echange() {$/;"	f
+n_edelete	s_modes.c	/^void n_edelete() {$/;"	f
+n_end	s_modes.c	/^void n_end() {$/;"	f
+n_escape	s_modes.c	/^void n_escape() {$/;"	f
+n_exmode	s_modes.c	/^void n_exmode() {$/;"	f
+n_finsert	s_modes.c	/^void n_finsert() {$/;"	f
+n_fprint	s_modes.c	/^void n_fprint() {$/;"	f
+n_gbottom	s_modes.c	/^void n_gbottom() {$/;"	f
+n_gdown	s_modes.c	/^void n_gdown() {$/;"	f
+n_gleft	s_modes.c	/^void n_gleft() {$/;"	f
+n_gmap	s_modes.c	/^const struct mapping n_gmap[] = {$/;"	v	typeref:struct:mapping
+n_gright	s_modes.c	/^void n_gright() {$/;"	f
+n_gtop	s_modes.c	/^void n_gtop() {$/;"	f
+n_gtree	s_modes.c	/^void n_gtree() { $/;"	f
+n_gup	s_modes.c	/^void n_gup() {$/;"	f
+n_idel	s_modes.c	/^void n_idel() {$/;"	f
+n_iedel	s_modes.c	/^void n_iedel() {$/;"	f
+n_insert	s_modes.c	/^void n_insert() {$/;"	f
+n_join	s_modes.c	/^void n_join() {$/;"	f
+n_map	s_modes.c	/^const struct mapping n_map[] = { $/;"	v	typeref:struct:mapping
+n_move_down	s_modes.c	/^void n_move_down() {$/;"	f
+n_move_left	s_modes.c	/^void n_move_left() {$/;"	f
+n_move_right	s_modes.c	/^void n_move_right() {$/;"	f
+n_move_up	s_modes.c	/^void n_move_up() {$/;"	f
+n_nldown	s_modes.c	/^void n_nldown() {$/;"	f
+n_nlup	s_modes.c	/^void n_nlup() {$/;"	f
+n_null	s_modes.c	/^void n_null() {$/;"	f
+n_pagebottom	s_modes.c	/^void n_pagebottom() { move_cursor(PAGE_DOWN); }$/;"	f
+n_pagetop	s_modes.c	/^void n_pagetop() { move_cursor(PAGE_UP); }$/;"	f
+n_paragraph	s_modes.c	/^void n_paragraph() {$/;"	f
+n_paragraphb	s_modes.c	/^void n_paragraphb() {$/;"	f
+n_pcursdel	s_modes.c	/^void n_pcursdel() {$/;"	f
+n_redo	s_modes.c	/^void n_redo () {$/;"	f
+n_return	s_modes.c	/^void n_return() {$/;"	f
+n_rowend	s_modes.c	/^void n_rowend () {$/;"	f
+n_rowfront	s_modes.c	/^void n_rowfront () {$/;"	f
+n_search	s_modes.c	/^void n_search() {$/;"	f
+n_undo	s_modes.c	/^void n_undo () {$/;"	f
+n_word	s_modes.c	/^void n_word() {$/;"	f
+n_ydown	s_modes.c	/^void n_ydown() {$/;"	f
+n_yleft	s_modes.c	/^void n_yleft() {$/;"	f
+n_yline	s_modes.c	/^void n_yline() { $/;"	f
+n_ymap	s_modes.c	/^const struct mapping n_ymap[] = {$/;"	v	typeref:struct:mapping
+n_yright	s_modes.c	/^void n_yright() {$/;"	f
+n_ytree	s_modes.c	/^void n_ytree() { $/;"	f
+n_yup	s_modes.c	/^void n_yup() {$/;"	f
+n_ztree	s_modes.c	/^void n_ztree() { return; }$/;"	f
+new_node	s_stack.c	/^Stack *new_node (struct GlobalState *state) {$/;"	f
+next	shado.h	/^    CopyRegister *next;$/;"	m	struct:CopyRegister
+next	shado.h	/^    Stack *next;$/;"	m	struct:Stack
+numrows	shado.h	/^    int numrows;$/;"	m	struct:GlobalState
+open_file	s_io.c	/^void open_file (char *filename) {$/;"	f
+orig_termios	shado.h	/^    struct termios orig_termios;$/;"	m	struct:GlobalState	typeref:struct:GlobalState::termios
+peek	s_stack.c	/^struct GlobalState *peek (Stack *top) {$/;"	f
+pop	s_stack.c	/^struct GlobalState *pop (Stack **top) {$/;"	f
+print_debug	shado.c	/^void print_debug () {$/;"	f
+print_flag	shado.h	/^    int print_flag;$/;"	m	struct:GlobalState
+process_keypress	s_modes.c	/^void process_keypress () {$/;"	f
+prompt_line	s_input.c	/^char *prompt_line (char *prompt, void (*callback)(char *, int)) {$/;"	f
+push	s_stack.c	/^void push (Stack **top, struct GlobalState *state) {$/;"	f
+quit	s_term.c	/^void quit () {$/;"	f
+read_keypress	s_term.c	/^int read_keypress () {$/;"	f
+redo	shado.c	/^struct Stack *redo;$/;"	v	typeref:struct:Stack
+refresh_screen	s_output.c	/^void refresh_screen () {$/;"	f
+render	shado.h	/^    char *render;$/;"	m	struct:erow
+row	shado.h	/^    erow *row;$/;"	m	struct:GlobalState
+row_cx_to_rx	s_rows.c	/^int row_cx_to_rx (erow *row, int cx) {$/;"	f
+row_rx_to_cx	s_rows.c	/^int row_rx_to_cx (erow *row, int rx) {$/;"	f
+rowoff	shado.h	/^    int rowoff;$/;"	m	struct:GlobalState
+rows_to_string	s_io.c	/^char *rows_to_string (int *buflen) {$/;"	f
+rsize	shado.h	/^    int rsize;$/;"	m	struct:erow
+rx	shado.h	/^    int rx;$/;"	m	struct:GlobalState
+save_file	s_io.c	/^void save_file () {$/;"	f
+screencols	shado.h	/^    int screencols;$/;"	m	struct:GlobalState
+screenrows	shado.h	/^    int screenrows;$/;"	m	struct:GlobalState
+scroll	s_output.c	/^void scroll () {$/;"	f
+search	s_search.c	/^void search () {$/;"	f
+search_callback	s_search.c	/^void search_callback (char *query, int key) {$/;"	f
+select_syntax_hl	s_synhl.c	/^void select_syntax_hl () {$/;"	f
+set_cursor_type	s_output.c	/^void set_cursor_type () {$/;"	f
+set_sts_msg	s_bar.c	/^void set_sts_msg (const char *fmt, ...) {$/;"	f
+singleline_comment_start	shado.h	/^    char *singleline_comment_start;$/;"	m	struct:editorSyntax
+size	shado.h	/^    int size;$/;"	m	struct:erow
+snap	shado.h	/^    struct GlobalState *snap;$/;"	m	struct:Stack	typeref:struct:Stack::GlobalState
+stsmsg	shado.h	/^    char stsmsg[80];$/;"	m	struct:GlobalState
+stsmsg_time	shado.h	/^    time_t stsmsg_time;$/;"	m	struct:GlobalState
+syntax	shado.h	/^    struct editorSyntax *syntax;$/;"	m	struct:GlobalState	typeref:struct:GlobalState::editorSyntax
+syntax_to_color	s_synhl.c	/^int syntax_to_color (int hl) {$/;"	f
+term_colors	shado.h	/^enum term_colors {$/;"	g
+undo	shado.c	/^struct Stack *undo;$/;"	v	typeref:struct:Stack
+update_row	s_rows.c	/^void update_row (erow *row) {$/;"	f
+update_syntax	s_synhl.c	/^void update_syntax (erow *row) {$/;"	f
