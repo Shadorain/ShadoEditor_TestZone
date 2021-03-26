@@ -167,10 +167,6 @@ void free_row (erow *row) {
     free(row->render);
 }
 
-void cache_row (int at, char *s, size_t len) {
-    
-}
-
 void insert_row (int at, char *s, size_t len) {
     if (at < 0 || at > E.numrows) return;
     rope_append(E.rope_head, (const uint8_t*)s);
@@ -215,8 +211,6 @@ void open_file (char *filename) {
         while (linelen > 0 && (line[linelen - 1] == '\n'
                     || line[linelen - 1] == '\r')) linelen--;
         insert_row(E.numrows, line, linelen);
-        if (E.numrows > E.screencols-1)
-            cache_row(E.numrows, line, linelen);
     }
     free(line);
     fclose(fp);
