@@ -17,6 +17,8 @@
 #include <termios.h>
 #include <time.h>
 #include <unistd.h>
+
+#define page_size sysconf(_SC_PAGESIZE)
 /* }}} */
 /* Data {{{ */
 struct abuf {
