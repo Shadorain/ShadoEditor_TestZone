@@ -25,6 +25,11 @@
 #define ROPE_WCHAR 0
 #endif
 
+/* Ref counter integration */
+#ifndef REF_COUNT
+#define REF_COUNT 1
+#endif
+
 // These two magic values seem to be approximately optimal given the benchmark
 // in tests.c which does lots of small inserts.
 
@@ -76,7 +81,10 @@ typedef struct rope_node_t {
   // This is the number of elements allocated in nexts.
   // Each height is 1/2 as likely as the height before. The minimum height is 1.
   uint8_t height;
-  
+
+#if REF_COUNT
+  int ref_count;
+#endif
   rope_skip_node nexts[];
 } rope_node;
 
@@ -100,6 +108,12 @@ typedef struct {
 extern "C" {
 #endif
   
+#if REF_COUNT
+/* Reference Counter methods */
+void ref_inc (rope_node *n);
+void ref_dec (rope_node *n);
+#endif
+
 // Create a new rope with no contents
 rope *rope_new();
 

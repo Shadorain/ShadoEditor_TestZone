@@ -2,11 +2,36 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <stdio.h>
+#include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h> 
 
+#define container_of(ptr, type, member) \
+    ((type *)((char *)(ptr) - offsetof(type, member)))
+
 #define page_size sysconf(_SC_PAGESIZE)
+
+/* Reference Counter Structure */
+struct ref {
+    void (*free)(const struct ref *);
+    int count;
+};
+
+static inline void ref_inc (const struct ref *ref) {
+    ((struct ref *)ref)->count++;
+}
+static inline void ref_dec (const struct ref *ref) {
+    if (--((struct ref *)ref)->count == 0)
+        ref->free(ref);
+}
+static inline void ref_inc_ts (const struct ref *ref) {
+    __sync_add_and_fetch((int *)&ref->count, 1);
+}
+static inline void ref_dec_ts (const struct ref *ref) {
+    if (__sync_sub_and_fetch((int *)&ref->count, 1) == 0)
+        ref->free(ref);
+}
 
 int main () {
     char *src, *dst;
@@ -16,27 +41,12 @@ int main () {
     fin = open ("foo", O_RDWR);
     size = lseek(fin, 0, SEEK_END);
 
-    src = mmap(NULL, size, PROT_READ | PROT_WRITE, MAP_SHARED, fin, 0);
+    src = mmap(NULL, page_size, PROT_READ | PROT_WRITE, MAP_SHARED, fin, 0);
     printf("src: %s\n", src);
 
-    /* src = "hi"; */
-    src[0] = 'A';
+    src[0] = '0';
     if (msync(src, size, MS_ASYNC) == -1)
         perror ("msync");
-
-    /* msync(src, strlen(src), MS_SYNC); */
-
-/*     fout = open("bar", O_RDWR | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR); */
-/*     if (ftruncate(fout, size) == -1) { perror("ftruncate"); exit(3); } */
-
-/*     dst = mmap(NULL, size, PROT_READ | PROT_WRITE, MAP_SHARED, fout, 0); */
-/*     printf("precpy dst: %s\n", dst); */
-
-/*     memcpy(dst, src, size); */
-
-/*     printf("postcpy dst: %s\n", dst); */
-
-/*     printf("%lu", page_size); */
 
     exit(0);
 }

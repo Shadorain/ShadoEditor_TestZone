@@ -2,6 +2,7 @@
 
 #include <stdlib.h>
 #include <string.h>
+#include <stddef.h>
 #include <sys/types.h>
 
 // Needed for VC++, which always compiles in C++ mode and doesn't have stdbool.
@@ -12,8 +13,35 @@
 #include <assert.h>
 #include "rope.h"
 
+#define container_of(ptr, type, member) \
+    ((type *)((char *)(ptr) - offsetof(type, member)))
+
 // The number of bytes the rope head structure takes up
 static const size_t ROPE_SIZE = sizeof(rope) + sizeof(rope_node) * ROPE_MAX_HEIGHT;
+
+#if REF_COUNT
+/* Thread-safe reference counter methods */
+void ref_inc (rope_node *n) {
+  n->ref_count++;
+}
+
+static void rope_node_free (rope_node *n) {
+  rope_node *next;
+  for (rope_node *node = n->nexts[0].node; n != NULL; node = next) {
+    next = node->nexts[0].node;
+    free(node);
+  }
+  free(n->str);
+  free(next);
+  free(n);
+}
+
+void ref_dec (rope_node *n) {
+  n->ref_count--;
+  if (n->ref_count <= 0)
+    rope_node_free(n);
+}
+#endif
 
 // Create a new rope with no contents
 rope *rope_new2(void *(*alloc)(size_t bytes),
@@ -30,6 +58,9 @@ rope *rope_new2(void *(*alloc)(size_t bytes),
   r->head.num_bytes = 0;
   r->head.nexts[0].node = NULL;
   r->head.nexts[0].skip_size = 0;
+#if REF_COUNT
+  r->head.ref_count = 1;
+#endif
 #if ROPE_WCHAR
   r->head.nexts[0].wchar_size = 0;
 #endif
@@ -695,7 +726,11 @@ static void rope_del_at_iter(rope *r, rope_node *e, rope_iter *iter, size_t leng
       r->num_bytes -= e->num_bytes;
       // TODO: Recycle e.
       rope_node *next = e->nexts[0].node;
+#if REF_COUNT
+      ref_dec(e);
+#else
       r->free(e);
+#endif
       e = next;
     }
 

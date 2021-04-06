@@ -9,9 +9,12 @@ clean:
 	rm -f *.o ./shado
 
 valgrind: shado
-	valgrind -s --log-file=./.valgrind.log --leak-check=full --show-leak-kinds=all --track-origins=yes ./shado shado.c
+	valgrind -s --log-file=./.valgrind.log --leak-check=full --show-leak-kinds=all --track-origins=yes ./shado foo
 
 gdb: shado
 	gdb ./shado
+
+run: shado
+	./shado foo
 
 .PHONY: clean valgrind gdb
